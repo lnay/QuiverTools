@@ -1,0 +1,24 @@
+{
+	"name": "quivertools_demo",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": ".."
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"ms-toolsai.jupyter"
+			],
+			"settings": {
+				"notebook.displayOrder": [
+					"text/latex",
+					"text/plain"
+				]
+			}
+		}
+	},
+	"containerEnv": {
+		"SHELL": "/bin/bash"
+	}
+}
